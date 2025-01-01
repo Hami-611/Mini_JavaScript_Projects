@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color:bisque;
+}
+
+h1 {
+    color: black;
+    margin: 20px;
+}
+
+.quiz-container,
+.result-container {
+    background-color:aliceblue;
+    border-radius: 2%;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 400px;
+}
+
+.quiz-header {
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    background-color:antiquewhite;
+    border: none;
+    color:black;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 10px;
+}
+#next{
+    background-color: red;
+}
+#next:hover{
+    background-color: lightcoral;
+}
+
+#prev {
+    background-color: grey;
+
+}
+#prev:hover{
+    background-color: lightslategray;
+}
+
+#submit,
+#result,
+#reload {
+    background-color: red;
+    display: none;
+}
+#result #reload #submit:hover{
+     background-color: lightcoral;
+}
+.actions #submit:hover{
+    background-color: lightcoral;
+}
+.disabled {
+    opacity: 0.6;
+}
+
+.wrong {
+    background-color: #feb2b2;
+    padding: 0 20px;
+}
+
+.correct {
+    background-color: #74e5a5;
+    padding: 0 20px;
+
+}

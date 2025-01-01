@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+.text {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-file {
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightgray;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+

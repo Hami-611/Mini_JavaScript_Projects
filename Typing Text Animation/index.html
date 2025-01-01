@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Text Animation</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            font-size: 40px;
+            font-weight: 700px;
+            color: blueviolet;
+            position: relative;
+        }
+        div::after{
+            position: absolute;
+            content: " ";
+            width: 2px;
+            height: 100%;
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <div id="typing"></div>
+
+
+    <script>
+        let div = document.getElementById('typing');
+        let text = "Basic JavaScript Practice Codes   ";
+        let i = 0;
+        setInterval(() => {
+            div.innerHTML = text.slice(0,i);
+            i++;
+            if(i==text.length){
+                i=0;
+            }
+        }, 100);
+    </script>
+</body>
+</html>
